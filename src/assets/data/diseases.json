@@ -1,0 +1,24 @@
+{
+  "heart disease": "heart disease",
+  "lung diseases": [
+    "lung cancer",
+    "chronic obstructivepulmonary disease",
+    "asthma"
+  ],
+  "brain diseases": ["stroke", "alzheimer's disease"],
+  "digestive diseases": [
+    "colorectal cancer",
+    "pancreatic cancer",
+    "oesophageal cancer"
+  ],
+  "Infections": "infections",
+  "diabetes": "diabetes",
+  "high blood pressure": "high blood pressure",
+  "live diseases": [
+    "alcoholic liver disease",
+    "non-alcoholic liver disease",
+    "viral hepatitis"
+  ],
+  "blood cancers": [""],
+  "kidney disease": "kidney disease"
+}

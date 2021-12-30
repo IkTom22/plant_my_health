@@ -1,7 +1,7 @@
 import React from "react"
 
 const Diseases = () => {
-  return <div>List of the diseases</div>
+  return <h1>Hello from Diseases page</h1>
 }
 
 export default Diseases
