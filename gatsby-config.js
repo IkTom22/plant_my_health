@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "PlantMyHealth",
+    description:
+      "Information of the benefits of plant-based diet to prevent diseases",
+  },
   plugins: [`gatsby-plugin-styled-components`],
 }
