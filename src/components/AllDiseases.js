@@ -24,7 +24,7 @@ const AllDiseases = () => {
   //const data = useStaticQuery(getData)
 
   return (
-    <div>
+    <div className="page">
       <h4>Pick a disease</h4>
       <TagsList />
     </div>
