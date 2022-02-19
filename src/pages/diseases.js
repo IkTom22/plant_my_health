@@ -1,5 +1,5 @@
 import React from "react"
-import AllDiseases from "../components/AllDiseases"
+import AllDiseases from "../components/all_diseases/AllDiseases"
 
 const Diseases = () => {
   return (

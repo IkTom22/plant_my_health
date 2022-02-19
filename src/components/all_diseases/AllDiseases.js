@@ -1,8 +1,6 @@
 import React from "react"
-import Disease from "./Disease"
-import DiseaseCategory from "./DiseaseCategory"
 import { useStaticQuery, graphql } from "gatsby"
-import TagsList from "./TagsList"
+import TagsList from "../tags_list/TagsList"
 
 // const getData = graphql`
 //   {

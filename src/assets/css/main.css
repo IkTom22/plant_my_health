@@ -99,6 +99,7 @@ body {
 
 .side_bar {
   height: 100%;
+  background-color: #333538;
 }
 .nav_bar {
   height: 10%;
@@ -117,3 +118,7 @@ body {
     height: 100%;
   }
 }
+/* .logo {
+  background-image: url("../images/logo.svg") no-repeat 0;
+  stroke: var(--green);
+} */
