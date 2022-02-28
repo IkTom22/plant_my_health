@@ -32,7 +32,7 @@
   --black: #1d1d27;
 
   /* grey */
-  --grey-0: #fafbfc;
+  --grey: #fafbfc;
   --grey-50: #f2f4f8;
   --grey-100: #eaedf3;
   --grey-200: #e2e7ef;
@@ -96,29 +96,39 @@ body {
   height: 100vh;
   width: 100%;
 }
-
 .side_bar {
-  height: 100%;
-  background-color: #333538;
+  background-color: var(--blue);
+  height: 100vh;
 }
 .nav_bar {
-  height: 10%;
+  height: 85%;
 }
 .page {
-  height: 90%;
+  height: 100%;
 }
-@media only screen and (min-width: 576px) {
+
+.page {
+  height: 100vh;
+}
+
+.footer {
+  height: 15%;
+  color: var(--grey);
+  text-align: center;
+  background-color: var(--grey-1000);
+}
+@media only screen and (max-width: 576px) {
   :root {
     --defaultFontSize: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
+  .side_bar {
+    height: 10vh;
   }
   .nav_bar {
     height: 100%;
   }
-  .page {
-    height: 100%;
-  }
 }
-/* .logo {
-  background-image: url("../images/logo.svg") no-repeat 0;
-  stroke: var(--green);
-} */
