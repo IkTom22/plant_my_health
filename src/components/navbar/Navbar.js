@@ -13,16 +13,13 @@ import Tags from "../../assets/images/tags.svg"
 import Donate from "../../assets/images/donate.svg"
 import styles from "./navbar.styles"
 
-const Icon_container = styled.div`
-  height: 3rem;
-  width: 3rem;
-  background-color: var(--white);
-  border-radius: 20%;
-`
 const Side_Navbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg">
-      <Container className="d-flex flex-md-column justify-content-space-between nav_bar_container">
+    <Navbar collapseOnSelect expand="lg" style={styles.navBar}>
+      <Container
+        className="d-flex flex-md-column justify-content-space-between pt-5"
+        style={styles.holders}
+      >
         <Navbar.Brand className="mx-auto">
           <Link to="/">
             <Logo />
@@ -30,40 +27,53 @@ const Side_Navbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="flex-column">
+          <Nav
+            style={styles.iconsHolder}
+            className="d-flex flex-md-column pt-3 pb-3"
+          >
             <Nav.Item>
               <Link to="/diseases">
-                <Icon_container>
-                  <Diseases_svg style={styles.icons} />
-                </Icon_container>
+                <Icon_plate>
+                  <Inner_plate>
+                    <Diseases_svg style={styles.icons} />
+                  </Inner_plate>
+                </Icon_plate>
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link to="/plants">
-                <Icon_container>
-                  <Plant_based_food style={(styles.plants, styles.icons)} />
-                </Icon_container>
+                <Icon_plate>
+                  <Inner_plate>
+                    <Plant_based_food style={(styles.plants, styles.icons)} />
+                  </Inner_plate>
+                </Icon_plate>
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link to="/animal_products">
-                <Icon_container>
-                  <Animal_products style={styles.icons} />
-                </Icon_container>
+                <Icon_plate>
+                  <Inner_plate>
+                    <Animal_products style={styles.icons} />
+                  </Inner_plate>
+                </Icon_plate>
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link to="/tags">
-                <Icon_container>
-                  <Tags style={styles.icons} />
-                </Icon_container>
+                <Icon_plate>
+                  <Inner_plate>
+                    <Tags style={styles.icons} />
+                  </Inner_plate>
+                </Icon_plate>
               </Link>
             </Nav.Item>
             <Nav.Item>
               <Link to="/tags">
-                <Icon_container>
-                  <Donate style={styles.icons} />
-                </Icon_container>
+                <Icon_plate>
+                  <Inner_plate>
+                    <Donate style={styles.icons} />
+                  </Inner_plate>
+                </Icon_plate>
               </Link>
             </Nav.Item>
           </Nav>
@@ -72,5 +82,23 @@ const Side_Navbar = () => {
     </Navbar>
   )
 }
-
+const Icon_plate = styled.div`
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-2);
+`
+const Inner_plate = styled.div`
+  height: 4.7rem;
+  width: 4.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--grey-300);
+`
 export default Side_Navbar

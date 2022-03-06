@@ -12,20 +12,19 @@ import { Stack } from "react-bootstrap"
 const Layout = ({ children }) => {
   return (
     <>
-      <Container fluid className="container m-0 p-0">
-        <Row className="container flex d-flex flex-sm-column flex-md-row align-items-md-stretch m-0 p-0">
-          <Col
-            xs={12}
-            md={2}
-            className="m-0 p-0 d-flex flex-md-column side_bar "
-          >
+      <Container
+        fluid
+        className="flex d-flex flex-sm-column flex-md-row m-0 p-0 app_container"
+      >
+        <Row className="flex d-flex  flex-md-column align-items-md-stretch m-0 p-0  side_bar">
+          <Col className="nav_bar p-0">
             <Navbar />
+          </Col>
+          <Col className="p-0 footer">
             <Footer />
           </Col>
-          <Col xs={12} md={10} className="page">
-            {children}
-          </Col>
         </Row>
+        <Row className="page m-0">{children}</Row>
       </Container>
     </>
   )
